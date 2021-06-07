@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.manqla">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".app.Manqla"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_mn2ala__new_logo_2_02"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_mn2ala__new_logo_2_02"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".view.mobadrat.MubadratDetailsScreen"></activity>
+        <activity android:name=".view.playvideo.VideoScreen" />
+        <activity
+            android:name=".view.contactus.ContactUsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.questionsandanswers.QuestionAnswerScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.whous.AboutUsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.goals.GoalsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.websites.WebSiteDetailsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.websites.student.WebsiteStudentScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.websites.onlineservices.WebsiteOnlineScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.websites.WebsitesScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.articles.details.ArticlesDetailsScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity android:name=".view.articles.ArticlesScreen" />
+        <activity
+            android:name=".view.mobadrat.onlineservice.OnlineServicesScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.mobadrat.mobadratstudent.MobadratStudentScreen"
+            android:screenOrientation="portrait" />
+        <activity android:name=".view.mobadrat.MobadratActivity" />
+        <activity
+            android:name=".view.home.HomeScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".view.signup.SignUpScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/FulScreenNoActionBar" />
+        <activity
+            android:name=".view.login.LoginScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/FulScreenNoActionBar" />
+        <activity
+            android:name=".view.splash.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/FulScreenNoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

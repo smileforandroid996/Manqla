@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/profile_g">
+        <item android:title="مبادرات مجانية"
+            android:id="@+id/mubardrat"
+            android:icon="@drawable/ic_lightbulb"/>
+    </group>
+
+    <group android:id="@+id/_orders">
+        <item android:title="مواقع التحول الرقمى"
+            android:id="@+id/website"
+            android:icon="@drawable/ic_globe"/>
+    </group>
+
+    <group android:id="@+id/_notification">
+        <item android:title="مقالات"
+            android:id="@+id/articles"
+            android:icon="@drawable/ic_application"/>
+    </group>
+
+    <group android:id="@+id/free_trips_">
+        <item android:title="من نحن"
+            android:id="@+id/who_us"
+            android:icon="@drawable/ic_conversation"/>
+    </group>
+
+    <group android:id="@+id/_terms">
+        <item android:title="الرسالة و الرؤية"
+            android:id="@+id/vision"
+            android:icon="@drawable/ic_eye"/>
+    </group>
+
+    <group android:id="@+id/_share">
+        <item android:title="الاسئلة المتكررة"
+            android:id="@+id/questions"
+            android:icon="@drawable/ic_interview"/>
+    </group>
+
+    <group android:id="@+id/_settings">
+        <item android:title="تواصل معنا"
+            android:id="@+id/contact_us"
+            android:icon="@drawable/ic_contact"/>
+    </group>
+
+    <group android:id="@+id/_shar">
+        <item android:title="مشاركة"
+            android:id="@+id/share"
+            android:icon="@drawable/ic_baseline_share_24"/>
+    </group>
+
+    <group android:id="@+id/_logout">
+        <item android:title="تسجيل خروج"
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"/>
+    </group>
+
+</menu>

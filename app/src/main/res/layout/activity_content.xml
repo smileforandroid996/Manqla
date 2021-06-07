@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        app:title="الرئيسية"
+        app:titleTextColor="@color/colorWhite"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_40sdp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_50sdp"
+                >
+
+                <LinearLayout
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/bg_color"
+                    android:layout_gravity="center"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_mn2ala__new_logo_2_02"
+                    android:layout_gravity="center"
+                    />
+
+            </FrameLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/first_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_6sdp"
+                app:cardElevation="@dimen/_4sdp"
+                android:layout_margin="@dimen/_15sdp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image_1"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_alignParentStart="true"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:src="@drawable/ic_mobadrat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="مبادرات مجانية"
+                        android:id="@+id/title_1"
+                        android:layout_toEndOf="@+id/image_1"
+                        android:textSize="@dimen/_11ssp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_black"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="هي بوابة مختصة بكل ما يتعلق بمادرات منقلة عن المحو الامية التكنولوجية والخدمات الالكترونية ."
+                        android:layout_toEndOf="@+id/image_1"
+                        android:textSize="@dimen/_8ssp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_below="@+id/title_1"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/second_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_6sdp"
+                app:cardElevation="@dimen/_4sdp"
+                android:layout_margin="@dimen/_15sdp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:layout_constraintTop_toBottomOf="@+id/first_item">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image_2"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_alignParentStart="true"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:src="@drawable/ic_websites" />
+
+                    <TextView
+                        android:id="@+id/title_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_toEndOf="@+id/image_2"
+                        android:text="اهم مواقع التحول الرقمى"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/_11ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title_2"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_toEndOf="@+id/image_2"
+                        android:text="هي بوابة مختصة يكل ما يتعلق عن اهم مواقع التحول الرقمي في مجال التعليم وغيره ."
+                        android:textSize="@dimen/_8ssp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/third_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_6sdp"
+                app:cardElevation="@dimen/_4sdp"
+                android:layout_margin="@dimen/_15sdp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:layout_constraintTop_toBottomOf="@+id/second_item">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:src="@drawable/ic_articles"
+                        android:id="@+id/image_3"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_alignParentStart="true"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:id="@+id/title_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_toEndOf="@+id/image_3"
+                        android:text="مقالات تعليمية"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/_11ssp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="هي بوابة مختصة في مقالات عن التحول الرقمي والتكنولوجيا بشكل عام ."
+                        android:layout_toEndOf="@+id/image_3"
+                        android:textSize="@dimen/_8ssp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_below="@+id/title_3"
+                        />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
